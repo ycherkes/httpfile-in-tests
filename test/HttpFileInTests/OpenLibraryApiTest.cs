@@ -3,7 +3,7 @@ using HttpFileInTests.Infrastructure;
 
 namespace HttpFileInTests;
 
-public class OpenLibraryTest
+public class OpenLibraryApiTest
 {
     [Theory]
     [InlineData("OpenLibraryGetBook.http", "OpenLibraryGetBookResponseBody.json")]
