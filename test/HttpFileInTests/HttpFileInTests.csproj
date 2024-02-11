@@ -27,6 +27,9 @@
     <None Update="TestData\OpenLibraryGetBook.http">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Update="TestData\OpenLibraryGetBookResponseBody.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
