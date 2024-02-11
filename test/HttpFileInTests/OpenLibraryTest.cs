@@ -1,6 +1,5 @@
 using HttpFileInTests.Extensions;
 using HttpFileInTests.Infrastructure;
-using Microsoft.DotNet.Interactive.HttpRequest;
 
 namespace HttpFileInTests;
 
@@ -20,6 +19,6 @@ public class OpenLibraryTest
         // Assert
         commandResult.EnsureSuccess();
             
-        Assert.Equal(expectedResponseContent, (commandResult.ReturnValueProduced?.Value as HttpResponse)?.Content?.Raw);
+        Assert.Equal(expectedResponseContent, commandResult.RawHttpResponseContent);
     }
 }
