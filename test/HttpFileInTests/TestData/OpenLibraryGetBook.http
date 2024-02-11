@@ -1,0 +1,2 @@
+﻿GET https://openlibrary.org/api/books?bibkeys=OL25158907M&format=json HTTP/1.1
+ACCEPT: application/json
