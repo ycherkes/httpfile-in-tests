@@ -26,7 +26,7 @@ internal class HttpFileUtility
         });
 
         using var client = new HttpClient(handler);
-        using var kernel = new HttpRequestKernel(client: client);
+        using var kernel = new HttpRequestKernel(client: client, responseDelayThresholdInMilliseconds: 0, contentByteLengthThreshold: int.MaxValue);
         var result = await kernel.SendAsync(new SubmitCode(httpFileContent));
 
         return new TestAdoptedKernelCommandResult(result.Command, result.Events)
